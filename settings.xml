@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <profiles>
+    <profiles>
+		<profile>
+			<id>myMavenRepo</id>
+			<activation>
+				<property>
+					<name>myRepo</name>
+				</property>
+			</activation>
+			<properties>
+				<myMavenRepo.read.url>https://mymavenrepo.com/repo/udVW0VHM6tgo6AWxjiEd/</myMavenRepo.read.url>
+				<myMavenRepo.write.url>https://mymavenrepo.com/repo/ZbgqXjdOXm70koY7uBl6/</myMavenRepo.write.url>
+			</properties>
+		</profile>
+	</profiles>
+  </profiles>
+
+  <activeProfiles>
+    <activeProfile>myMavenRepo</activeProfile>
+  </activeProfiles>
+</settings>
